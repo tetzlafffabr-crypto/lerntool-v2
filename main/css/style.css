@@ -1,1 +1,233 @@
-nan
+/*HTML*/
+* { box-sizing: border-box;}
+body{
+    background-color: darkslategrey;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow:hide;
+}
+header{
+    overflow-wrap:break-word;
+    z-index:1;
+    position:relative;
+    box-shadow: 0 0 5px black, 0 0 10px black;
+    background-color: dimgray;
+    height: 65px;
+    width: 100%;
+    padding: 10px;
+}
+main{
+    z-index:0;
+    position:relative;
+    height:455px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width:none;
+}
+footer{
+    z-index:1;
+    position:relative;
+    height:65px;
+    width: 100%;
+    padding: 20px;
+    display:flex;
+}
+
+
+input{
+    outline:0px;
+}
+
+button:active{
+    transform:scale(0.95);
+}
+/*
+>
+HEADER
+>
+*/
+#infobarHeader{
+    position: absolute;
+}
+#webTitle{
+    justify-self: center;
+    width: 400px;
+    height: 50px;
+    margin-top: -27px;
+    position: relative;
+    text-align: center;
+}
+#webTitle h2{
+    margin-top:20px;
+    position: relative;
+    color:red;
+    text-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        0 0 15px red;
+}
+#webTitle p{
+    margin-top:-10px;
+    font-size:10px;
+    position: relative;
+}
+/*
+>
+MAIN
+>
+*/
+#devTool button{
+    font-size:20px;
+    width:auto;
+    height:auto;
+    position:relative;
+    margin-top:15px;
+    border:0px;
+    outline:0px;
+    background-color: rgba(0,0,0,0.0);
+    color:red;
+    text-shadow:
+        0 0 10px red,
+        0 0 15px red,
+        0 0 20px red;
+}
+#devTool button:hover{
+    transform:scale(0.9);
+}
+#devTool button:active{
+    transform:scale(1);
+}
+
+#interaction{
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+    height: auto;
+    width: 450px;
+    background: black;
+    left: 33%;
+    bottom: 45%;
+}
+#interaction input, #interaction button, #interaction select{
+    width:100%;
+}
+
+#exitFrameBtn{
+    left: 0px;
+    top: 65px;
+    width: 100%;
+    position: fixed;
+}
+
+#leftSidebar{
+    z-index:9999;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    left:0px;
+    background:rgba(0,0,0,0.4);
+    text-align:center;
+    height:auto;
+    width:auto;
+}
+#leftSidebar button{
+    position:relative;
+}
+#toggleIndexBtn{
+    display:none;
+    position:fixed;
+    left:0;
+    z-index:9999;
+}
+
+
+#dashboard{
+    box-sizing: border-box;
+    position:relative;
+    width:95%;
+    height:90%;
+    background:grey;
+    margin: 0 auto;
+    border:5px solid rgb(39, 38, 38);
+}
+.chaptersLeft{
+    overflow-wrap: break-word;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    background: #233b3b;
+    text-align: center;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.chaptersRight{
+    top: -950px;
+    right: -600px;
+    overflow-wrap: break-word;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    background: #233b3b;
+    text-align: center;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.chapterEditBtn{
+    left:5px;
+    position:absolute;
+}
+.chapterSaveBtn{
+    right:5px;
+    position:absolute;
+}
+
+/*
+>
+TRAINYARD
+>
+*/
+
+#trainyard{
+    text-align:center;
+    top: -5%;
+    left: -7%;
+    position: relative;
+    display: flex;
+    height: 126%;
+    width: 117%;
+}
+#leftYard{
+    box-sizing: border-box;
+    position:relative;
+    width:50%;
+    height:450px;
+    border-right:2px solid black;
+}
+#rightYard{
+    box-sizing: border-box;
+    position:relative;
+    width:50%;
+    height:450px;
+}
+
+
+/*
+>
+FOOTER
+>
+*/
+#interfaceYard{
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 289%;
+    bottom: 104%;
+}
