@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width,initial.scale=1.0">
+        <title>traingound-v2.de</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header id="header">
+            <div id="infobarHeader">
+                <span id="welcome">Welcome back!</span><br>
+                <span id="userOutput"></span>
+            </div>
+            <div id="webTitle">
+                <h2>trainground-v2</h2>
+                <p>VERSION: <span id="versionOutput"></span></p>
+            </div>
+            <h2 style="
+                position:absolute; 
+                right:15px; 
+                height:auto;
+                width:auto;
+                top:-2px;
+                color:red;
+                text-shadow:
+                    0 0 10px red,
+                    0 0 15px red,
+                    0 0 20px red;
+            "><span id="clock"></span></h2>
+        </header>
+        <main id="main">
+            <button onclick="showDevTool()" style="
+                display:none;
+                position:fixed;
+                right:0px;
+                background:none;
+                color:red;
+                text-shadow:
+                    0 0 10px red,
+                    0 0 15px red,
+                    0 0 20px red;
+                " id="showDevTool">SHOW</button>
+            <div id="devTool">
+
+            </div>
+            <div id="interaction">
+                <div>
+                    <input id="inputText" type="text" placeholder="Name / Title / Target / first">
+                    <input id="inputDesc" type="text" placeholder="Description / Text Value / second">
+                    <input id="inputValue" type="text" placeholder="Value">
+                    <input id="inputD" type="text" placeholder="Input D">
+                    <select id="inputSelection">
+                        <option>version_update</option>
+                        <option>spanish_vocs_easy</option>
+                        <option>spanish_vocs_mid</option>
+                        <option>spanish_vocs_hard</option>
+                        <option>alphaTest_questions</option>
+                    </select>
+                    <button onclick="interSub()">SUBMIT</button>
+                    <button onclick="interClose()">CLOSE</button>
+                </div>
+            </div>
+            <div id="leftSidebar">
+                <h3>INDEX</h3>
+                <a href="login.html">LOGIN-PAGE</a>
+                <a href="index.html">HOME</a>
+                <a href="trainground.html">TRAINGROUND</a>
+                    <button onclick="indexToggle()"><</button>
+            </div>
+            <button id="toggleIndexBtn" onclick="indexToggle()">></button>
+            <div id="dashboard">
+                <h1>Dashboard</h1>
+                <div id="userDataOut">
+                    <p>Current User: <span id="dashUserOut"></span></p>
+                    <p>Your Score: <span id="dashScoreOut"></span></p>
+                </div>
+            </div>
+            <div id=indexCode">
+                <h2>Grund-Idee</h2>
+                <p>Mein Vorhaben ist es, die beste Möglichkeit zu lernen für mich zu finden.</p>
+                <p>Während der Programmierung dieses Codes lerne ich. Das ist schonmal genial.</p>
+                <p>Als erste erstelle ich verschiedene Sektoren für jeweilge Themen.</p>
+                <p>Mein <a href="C://Users/extra/Desktop/Programming/Projects/All-Round-Kurs/Projekt-Lerntool/main/index.html">Lerntool-Alpha</a> werde ich natürlich übertreffen.</p>
+                <br>
+                <p>Grundregel - 1</p>
+                <p>Ich schreibe jeden Code selbst.</p>
+            </div>
+            <div id="chapter1" class="chaptersLeft">
+                <button class="chapterEditBtn">EDIT</button>
+                <button class="chapterSaveBtn">SAVE</button>
+                <h2 style="text-decoration:underline;">HTML</h2>
+            </div>
+            <div id="chapter2" class="chaptersLeft">
+                <button class="chapterEditBtn">EDIT</button>
+                <button class="chapterSaveBtn">SAVE</button>
+                <h2 style="text-decoration:underline;">CSS</h2>
+                <h6>Cascading Style Sheets</h6>
+                <p>Mit HTML erstellen wir die Struktur einer Website.
+                CSS dagegen wird für die Darstellung / Layout benutzt.
+                Die Grundlegende CSS Syntax sieht wie folgt aus:</p>
+                <img src="images/css-syntax.png"><br>
+                <p>Mit dem Selektor entscheiden wir auf welches Element in HTML wir zugreifen.</p>
+                <p>Wir verändern die Darstellung unseres Elements in dem wir sogenannte Eigenschaften hinzufügen wie zum Beispiel background:fixed; oder color:green;</p>
+                <p>Jede Eigenschaft braucht auch einen Wert um das Layout zu verändern.</p>
+                <p>Also: Selektor → Eigenschaft → Wert</p>
+                <p>Es gibt sogenannte Pseudo-Klassen / Selektoren wie z.B: button:hover.</p>
+                <img src="images/content-example.png"><br>
+                
+            </div>
+            <div id="chapter3" class="chaptersLeft">
+                <h2 style="text-decoration:underline;">JavaScript</h2>
+            </div>
+            <div class="chaptersRight">
+                <h2 style="text-decoration:underline;">HTML OVERVIEW</h2>
+            </div>
+            <div class="chaptersRight">
+                <h2 style="text-decoration:underline;">CSS OVERVIEW</h2>
+                <p>TEST !!!!!!</p>
+            </div>
+            <div class="chaptersRight">
+                <h2 style="text-decoration:underline;">JavaScript OVERVIEW</h2>
+            </div>
+        </main>
+        <footer id="footer">
+            
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/updates.js"></script>
+        <script src="js/trainYard.js"></script>
+    </body>
+</html>
